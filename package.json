@@ -1,0 +1,16 @@
+{
+  "name": "fem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "light-server": "^2.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "light-server -s . -w *.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
