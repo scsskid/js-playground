@@ -1,1 +1,1 @@
-console.log('jo')
+while (true) {}
