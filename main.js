@@ -1,1 +1,1 @@
-while (true) {}
+console.log('It Works!')

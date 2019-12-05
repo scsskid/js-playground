@@ -34,7 +34,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "light-server -s . -w *.js"
+    "start": "light-server -s . -w \"*.js, *.html\""
   },
   "keywords": [],
   "author": "",
