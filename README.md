@@ -1,6 +1,6 @@
 # JS Playground Boilerplate
 
-Start Server with livereloading `js` and `html` files
+Start Server (It will live-reload `js` and `html` files)
 
 ```bash
 npm run start
