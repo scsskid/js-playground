@@ -7,8 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "light-server -s . -w \"*.js, *.html\"",
-    "stylelint-check": "stylelint-config-prettier-check"
+    "start": "light-server -s . -w \"*.js, *.css, *.html\""
   },
   "prettier": {
     "parser": "babel",
