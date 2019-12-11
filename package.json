@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "light-server -s . -w \"*.js, *.html\"",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
   "prettier": {
     "parser": "babel",
     "useTabs": false,
@@ -25,18 +32,40 @@
       "prettier"
     ]
   },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "./node_modules/prettier-stylelint/config.js"
+    ],
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "mixin",
+            "define-mixin",
+            "media",
+            "import",
+            "custom-selector",
+            "custom-media",
+            "font-face",
+            "import-sanitize"
+          ]
+        }
+      ],
+      "block-no-empty": null,
+      "no-duplicate-selectors": null
+    }
+  },
   "dependencies": {
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
     "light-server": "^2.6.4",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "start": "light-server -s . -w \"*.js, *.html\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {}
 }
