@@ -7,8 +7,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node-sass-chokidar ./src -o ./ --watch && light-server -s . -w \"**/*.css # # reloadcss\" -w \"**/*.js, **/*.html\""
-    
+    "sass": "node-sass-chokidar ./src -o ./ --watch",
+    "serve": "light-server -s . -w \"**/*.css # # reloadcss\" -w \"**/*.js, **/*.html\"",
+    "start": "npm run serve & npm run sass"
   },
   "prettier": {
     "parser": "babel",
