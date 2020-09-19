@@ -7,14 +7,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "light-server -s . -w \"*.js, *.css, *.html\""
-  },
-  "prettier": {
-    "parser": "babel",
-    "useTabs": false,
-    "printWidth": 120,
-    "singleQuote": true,
-    "semi": false
+    "sass": "node-sass-chokidar ./src -o ./ --watch",
+    "serve": "light-server -s . -w \"**/*.css # # reloadcss\" -w \"**/*.js, **/*.html\"",
+    "start": "npm run serve & npm run sass"
   },
   "eslintConfig": {
     "parserOptions": {
@@ -61,6 +56,7 @@
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "light-server": "^2.8.0",
+    "node-sass-chokidar": "^1.5.0",
     "prettier": "^1.19.1",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^12.0.1",

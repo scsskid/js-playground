@@ -5,7 +5,8 @@ Installation
 ```bash
 npm install
 ```
-Start Server (It will live-reload `js` and `html` files)
+
+Start Server (It will live-reload `js`, `html` and `css` files)
 
 ```bash
 npm run start
