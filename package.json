@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "build": "node esbuilder.js",
-    "start": ""
+    "start": "node esbuilder.js --watch"
   },
   "eslintConfig": {
     "parserOptions": {

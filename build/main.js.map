@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/main.js"],
-  "sourcesContent": ["import './styles.scss';\n\nconsole.log(\"It works!!! \u2705\");"],
-  "mappings": "MAEA,QAAQ,IAAI",
-  "names": []
-}
