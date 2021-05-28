@@ -7,9 +7,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "sass": "node-sass-chokidar ./src -o ./ --watch",
-    "serve": "light-server -s . -w \"**/*.css # # reloadcss\" -w \"**/*.js, **/*.html\"",
-    "start": "npm run serve & npm run sass"
+    "build": "node esbuilder.js",
+    "start": ""
   },
   "eslintConfig": {
     "parserOptions": {
@@ -52,15 +51,16 @@
     }
   },
   "dependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "light-server": "^2.8.0",
-    "node-sass-chokidar": "^1.5.0",
-    "prettier": "^1.19.1",
+    "browser-sync": "^2.26.14",
+    "chokidar": "^3.4.2",
+    "esbuild": "^0.12.5",
+    "esbuild-plugin-sass": "^0.5.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.3.0",
     "prettier-stylelint": "^0.4.2",
-    "stylelint": "^12.0.1",
-    "stylelint-config-standard": "^19.0.0"
-  },
-  "devDependencies": {}
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
 }
