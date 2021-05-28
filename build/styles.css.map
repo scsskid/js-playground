@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/styles.scss"],"names":[],"mappings":"AACE,QACE","file":"styles.css","sourcesContent":["body {\n  h1 {\n    color: s;\n  }\n}"]}
