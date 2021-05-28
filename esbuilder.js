@@ -27,18 +27,13 @@ const build = async () => {
 
 //watch it?
 if (process.argv.includes("--watch")) {
-  //chokidar will watch theme files for changes to trigger rebuild
-  // const watcher = chokidar.watch(["js/**/*.js", "css/**/*.scss", "**/*.php"]);
   const watcher = chokidar.watch(["src/**/*.js"]);
   console.log("Watching files... \n");
 
-  //first build
   build();
-  //build on changes
   watcher.on("change", () => {
     build();
   });
 } else {
-  //no watch flag, just build it and be done
   build();
 }
