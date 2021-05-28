@@ -1,5 +1,6 @@
 {
   "name": "fem",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -7,8 +8,10 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "build": "node esbuilder.js",
-    "start": "node esbuilder.js --watch"
+    "build:js": "node esbuilder.js",
+    "build:css": "node dart-sass.js",
+    "start": "node esbuilder.js --watch",
+    "serve": "node browser-sync.js"
   },
   "eslintConfig": {
     "parserOptions": {
@@ -60,6 +63,7 @@
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.0",
     "prettier-stylelint": "^0.4.2",
+    "sass": "^1.34.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   }
