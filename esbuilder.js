@@ -1,5 +1,5 @@
-const esbuild = require("esbuild");
-const chokidar = require("chokidar");
+import esbuild from "esbuild";
+import chokidar from "chokidar";
 
 const build = async () => {
   console.log("Building...");
