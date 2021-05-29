@@ -10,5 +10,5 @@
     },
     "rules": {},
     "extends": ["airbnb", "prettier"]
-  
+  }
 }
