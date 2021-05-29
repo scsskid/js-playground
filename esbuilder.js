@@ -25,7 +25,8 @@ const build = async () => {
   }
 };
 
-//watch it?
+//watch
+
 if (process.argv.includes("--watch")) {
   const watcher = chokidar.watch(["src/**/*.js"]);
   console.log("Watching files... \n");
