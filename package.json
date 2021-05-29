@@ -13,46 +13,6 @@
     "start": "node esbuilder.js --watch",
     "serve": "node browser-sync.js"
   },
-  "eslintConfig": {
-    "parserOptions": {
-      "sourceType": "module"
-    },
-    "env": {
-      "node": true,
-      "browser": true,
-      "es6": true
-    },
-    "rules": {},
-    "extends": [
-      "airbnb",
-      "prettier"
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-standard",
-      "./node_modules/prettier-stylelint/config.js"
-    ],
-    "rules": {
-      "at-rule-no-unknown": [
-        true,
-        {
-          "ignoreAtRules": [
-            "mixin",
-            "define-mixin",
-            "media",
-            "import",
-            "custom-selector",
-            "custom-media",
-            "font-face",
-            "import-sanitize"
-          ]
-        }
-      ],
-      "block-no-empty": null,
-      "no-duplicate-selectors": null
-    }
-  },
   "dependencies": {
     "browser-sync": "^2.26.14",
     "chokidar": "^3.4.2",
