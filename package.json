@@ -10,8 +10,10 @@
   "scripts": {
     "build:js": "node esbuilder.js",
     "build:css": "node dart-sass.js",
-    "start": "node esbuilder.js --watch",
-    "serve": "node browser-sync.js"
+    "watch:js": "node esbuilder.js --watch",
+    "watch:css": "node dart-sass.js --watch",
+    "serve": "node browser-sync.js",
+    "start": "npm run watch:js & npm run watch:css & npm run serve"
   },
   "dependencies": {
     "browser-sync": "^2.26.14",

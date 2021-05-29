@@ -1,15 +1,8 @@
-const bs = require("browser-sync").create();
+import bs from 'browser-sync';
 
-bs.init({
+bs.create().init({
   files: ["./build/**/*.js", "./build/**/*.css"],
   open: true,
   server: true,
-  ghostMode: false
+  ghostMode: false,
 });
-
-// bs.watch("src/**/*.js", function (event, file) {
-//   require("esbuild")
-//     .build(esbuildConfig)
-//     .then(() => bs.reload())
-//     .catch(() => process.exit(1));
-// });
